@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .box{
+        height: 350px;
+        width: 450px;
+        background-color: rgb(246, 244, 244);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+      }
+      .ic{
+        height: 18px; 
+      }
+      .link{
+        margin-left: 90px;
+      }
+      .btn-1{
+        width: 90%;
+      }
+    </style>
+</head>
+<body class="justify-content-center mt-5">
+  <div class="box ms-3 container-fluid">
+    <center><h1><i>Instagram</i></h1></center>
+    <form class="col g-3 needs-validation" novalidate>
+      <div class="row-md-4 d-flex p-3 ">
+        <div class="input-group has-validation">
+            <span id="fn-1" class="input-group-text"><img class="ic" src="./icon male.png"></span>
+            <input type="text" class="form-control" id="fn" aria-describedby="fn-1" placeholder="UserName" required>
+            <div class="invalid-feedback">
+                Give your username
+            </div>
+        </div>
+    </div>
+    <div class="row-md-4 d-flex p-3">
+      <div class="input-group has-validation">
+          <span id="fn-1" class="input-group-text"><img class="ic" src="./icon pass.png"></span>
+          <input type="password" class="form-control" id="fn" aria-describedby="fn-1" placeholder="Password" required>
+          <div class="invalid-feedback">
+             Enter your password
+          </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary button text-light btn-1" type="submit"><b>Log In</b></button>
+    </div><br>
+    <input type="checkbox" name="check" class="ms-3">
+    <label for="check">Remember Me</label>
+    <label ><a href="#" class="link">Forgot Password?</a></label>
+    </form>
+  </div>
+  <div style="width: 450px;">
+    <p class="text-center my-3">Dont have an account! <a href="#">Sign Up Here</a></p>
+  </div>
+</body>
+<script>
+  (function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+  </script>
+</html>

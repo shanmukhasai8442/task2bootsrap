@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task-8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <h2 class="text-primary text-center">Registration Form</h2>
+    <style>
+        .box{
+            height: 100%;
+            width: 70%;
+        }
+        .ok{
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .ko{
+            margin-top: -25px;
+        }
+        .btn-1{
+            border-radius: 25px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+    <form class="col g-3 needs-validation" novalidate>
+            <div class="row-md-4 d-flex p-3">
+                <label for="fn" class="form-label ms-2"><b>First_Name</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="text" class="form-control" id="fn" aria-describedby="fn-1" required>
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2"><b>Last_Name</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="text" class="form-control" id="fn" aria-describedby="fn-1" required>
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Email</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="email" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: 8px;">
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Password</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="password" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: -25px;">
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Re_Password</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="password" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: -52px;">
+                    <div class="invalid-feedback">
+                        POOR OR WRONG
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ok ko">
+                <label for="fn" class="form-label"><b>Gender</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="radio" name="gender" required style="margin-right: 7px;">
+                    <label>Male</label>
+                    <input type="radio" name="gender" required style="margin-right: 7px; margin-left: 5px;">
+                    Female
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Age</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="number" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: 15px;">
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Phone_num</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="number" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: -45px;">
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ok ko">
+                <label for="fn" class="form-label ms-2"><b>Address</b></label>
+                <div class="input-group has-validation ms-5">
+                    <textarea rows="3" cols="40" name="comment" form="usrform" required style="margin-left: 15px;"></textarea>
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>State</b></label>
+                <div class="input-group has-validation ms-5">
+                    <input type="text" class="form-control" id="fn" aria-describedby="fn-1" required style="margin-left: 8px;">
+                    <div class="invalid-feedback">
+                        POOR
+                    </div>
+                </div>
+            </div>
+            <div class="row-md-4 d-flex p-3 ok ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Country</b></label>
+                <select class="form-select ms-5" id="validationCustom04" required >
+                    <option selected disabled value="">Select your Country</option>
+                    <option>India</option>
+                    <option>Russia</option>
+                    <option>Japan</option>
+                    <option>Soviet Union</option>
+                    <option>Nigeria</option>
+                  </select>
+            </div>
+            <div class="row-md-4 d-flex p-3 ok ko">
+                <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Languages_Known</b></label>
+                    <input type="checkbox" class="ok">
+                    <label>English</label>
+                    <input type="checkbox" class="ok">
+                    <label>Telugu</label>
+                    <input type="checkbox" class="ok">
+                    <label>Kannada</label>
+                    <input type="checkbox" class="ok">
+                    <label>Hindi</label>
+            </div>
+                <input type="checkbox" style="margin-left: 20px;">
+                <label>Hearby I declare that all the given details are true</label><br>
+                <p class="text-end me-2">Login in to <a href="#">Ethnus</a> Website</p>
+                <div class="text-center">
+                <button class="btn btn-danger button text-light btn-1" type="submit"><b>REGISTER</b></button>
+    </div>
+    </form>
+</body>
+<script>
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+    </script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Task-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .top{
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+      }
+      .box{
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+      }
+      .pricing-row {
+        justify-content: center;
+      }
+      .pricing-tier {
+        max-width: 500px;
+      }
+      .footer-logo {
+        max-width: 20px;
+        height: auto;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm justify-content-end top">
+      <div class="me-5">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light me-2 text-dark" href="#" aria-current="page">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-2 text-dark" href="#" aria-current="page">Enterprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-2 text-dark" href="#" aria-current="page">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light me-2 text-dark" href="#" aria-current="page">Pricing</a>
+          </li>
+          <button type="button" class="btn btn-outline-primary p-2 me-4">Sign Up</button>
+        </ul>
+      </div>
+  </nav>
+  <div>
+    <h1 class="text-center mt-4">Pricing</h1>
+    <p class="text-center">Quickly build an effective table for your potential customers with this<br>Bootstrap example.
+    It's built with default bootstrap components and utilities<br>with little customization</p>
+  </div>
+  <div class="row text-center d-flex justify-content-center mt-4 pricing-row">
+    <div class="col-xl-3 bg-light mx-3 my-2 box pricing-tier">
+      <h5>Free</h5><hr><h1>$0/mo</h1>
+      <p>10 users included<br>2GB of storage<br>Email Support<br>Help center access</p>
+      <button type="button" class="btn btn-outline-primary p-1 px-4 py-2" style="border-radius: 1;">Sign Up for Free</button>
+    </div>
+    <div class="col-xl-3 bg-light mx-3 my-2 box pricing-tier">
+      <h5>Pro</h5><hr><h1>$15/mo</h1>
+      <p>20 users included<br>10GB of storage<br>Priority Email Support<br>Help center access</p>
+      <button type="button" class="btn text-light bg-primary p-1 px-5 py-2 w-80" style="border-radius: 1;">Get Started</button>    
+    </div>
+    <div class="col-xl-3 bg-light mx-3 my-2 box pricing-tier">
+      <h5>Enterprise</h5><hr><h1>$29/mo</h1>
+      <p>30 users included<br>15GB of storage<br>Phone and Email Support<br>Help center access</p>
+      <button type="button" class="btn text-light bg-primary p-1 px-5 py-2" style="border-radius: 1;">Contact Us</button>    
+    </div>
+  </div>
+  <footer class="bd-footer md-5 mt-1 bg-body-tertiary">
+    <div class="row d-flex justify-content-center" style="height: 140px;">
+      <div class="col-xl-2 bg-light mx-3 my-2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc3V2wARnHTsjEZLMBiQPCpN5DgG8ZUHSsw&usqp=CAU" class="footer-logo"><br>
+        @2017
+      </div>
+      <div class="col-xl-2 bg-light mx-3 my-2 text-start">
+        <h4>Features</h4>
+        <p>Cool Stuff<br>Random feature<br>Team feature</p>
+      </div>
+      <div class="col-xl-2 bg-light mx-3 my-2 text-start">
+        <h4>Resources</h4>
+        <p>Resources<br>Resources Name<br>Another resource</p>
+      </div>
+      <div class="col-xl-2 bg-light mx-3 my-2 text-start">
+        <h4>About</h4>
+        <p>Team<br>Locations<br>Privacy</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

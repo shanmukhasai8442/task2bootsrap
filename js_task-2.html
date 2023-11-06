@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js task-2</title>
+    </head>
+    <body>
+        <center><h1>Fuction to sort a string</h1></center>
+        <center><h3 id="ok" class="op"></h3></center>
+    </body>
+    <script>
+        let str = prompt("enter any string: ","webmaster");
+        function sorting(string){
+            let new_str = string.split("").sort().join("");
+            return new_str;
+        }
+        let result = sorting(str);
+        document.getElementById("ok").innerHTML = "The output is: "+result;
+    </script>
+    <style>
+        .op{
+            color: darkgoldenrod;
+            font-size: x-large;
+        }
+        .op:hover{
+            font-size: 60px;
+        }
+    </style>
+</html>

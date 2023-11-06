@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task-3</title>
+</head>
+<body>
+    <label for="fnum">Enter first number:</label>
+    <input type="number" name="fnum" id="js-fnum"><br><br>
+    <label for="snum">Enter second number:</label>
+    <input type="number" name="snum" id="js-snum"><br><br>
+    <button onclick="
+        multi();
+    ">multiply</button>              
+    <button onclick="divide();">divide</button>
+    <h4 id="result"></h4>
+</body>
+<script>
+    function multi(){
+        let f = document.getElementById("js-fnum");
+        let f1 = f.value;
+        const s = document.getElementById("js-snum");
+        let s1 = s.value;
+        let r = f1*s1;
+        document.getElementById("result").innerHTML = "The product is: "+ r;    
+    }
+    function divide(){
+        const f = document.getElementById("js-fnum");
+        let f1 = f.value;
+        const s = document.getElementById("js-snum");
+        let s1 = s.value;
+        let r = f1/s1;
+        document.getElementById("result").innerHTML = "The result is: "+ r;    
+    }
+</script>
+</html>

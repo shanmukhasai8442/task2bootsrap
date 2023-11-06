@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js task-1</title>
+</head>
+<body>
+    <center><h1>Fuction to reverse a string</h1></center>
+    <center><h3 id="ok" class="op"></h3></center>
+</body>
+<script>
+    let str = prompt("enter any string: ","32243S");
+    function reverse(string){
+        let a = string.length;
+        let c = '';
+        for(let i=a-1;i>=0;i--){
+            c = c+string.charAt(i);
+        }
+        return c;
+    }
+    let result = reverse(str);
+    document.getElementById("ok").innerHTML = "The output is: "+result;
+</script>
+<style>
+    .op{
+        color: darkgoldenrod;
+        font-size: x-large;
+    }
+    .op:hover{
+        font-size: 60px;
+    }
+</style>
+</html>

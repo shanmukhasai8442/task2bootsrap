@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap task-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .ic{
+            height: 20px;
+        }
+        .ok{
+            text-align: center;
+        }
+        .button{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form class="col g-3 needs-validation" novalidate>
+        <div class="row-md-4 d-flex p-3 ">
+            <label for="fn" class="form-label ms-2"><b>First_Name</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon male.png"></span>
+                <input type="text" class="form-control" id="fn" aria-describedby="fn-1" placeholder="First Name" required>
+                <div class="invalid-feedback">
+                    Please supply your first name
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3">
+            <label for="fn" class="form-label ms-2"><b>Last_Name</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon male.png"></span>
+                <input type="text" class="form-control" id="fn" aria-describedby="fn-1" placeholder="Last Name" required>
+                <div class="invalid-feedback">
+                    Please supply your last name
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3">
+            <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>Email</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon mail.png"></span>
+                <input type="email" class="form-control" id="fn" aria-describedby="fn-1" required placeholder="Email Address">
+                <div class="invalid-feedback">
+                    Please supply your email
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3">
+            <label for="fn" class="form-label ms-2" style="margin-right: 31px;"><b>Phone</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon call.png"></span>
+                <input type="number" class="form-control" id="fn" aria-describedby="fn-1" required placeholder="(857)-89563247">
+                <div class="invalid-feedback">
+                    Please supply your phone number
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3">
+            <label for="fn" class="form-label ms-2" style="margin-right: 20px;"><b>Address</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon home.png"></span>
+                <input type="text" class="form-control" id="fn" aria-describedby="fn-1" required placeholder="Address">
+                <div class="invalid-feedback">
+                    Please supply your address
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3">
+            <label for="fn" class="form-label ms-2" style="margin-right: 46px;"><b>City</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon home.png"></span>
+                <input type="text" class="form-control" id="fn" aria-describedby="fn-1" required placeholder="City">
+                <div class="invalid-feedback">
+                    Please supply your City
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3 ok">
+            <label for="fn" class="form-label ms-2" style="margin-right: 35px;"><b>State</b></label>
+            <select class="form-select ms-5" id="validationCustom04" required>
+                <option selected disabled value="">Plese select your state</option>
+                <option>Andhra Pradesh</option>
+                <option>Assam</option>
+                <option>Karnataka</option>
+                <option>Bihar</option>
+                <option>Kerala</option>
+              </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3 ok">
+            <label for="fn" class="form-label"><b>Do_you_have_hosting?</b></label>
+            <div class="input-group has-validation ms-5">
+                <input type="radio" name="gender" required style="margin-right: 7px; margin-left: 5px;">
+                YES
+                <input type="radio" name="gender" required style="margin-right: 7px; margin-left: 5px;">
+                NO
+                <div class="invalid-feedback">
+                    Please select an option
+                </div>
+            </div>
+        </div>
+        <div class="row-md-4 d-flex p-3 ok">
+            <label for="fn" class="form-label ms-2"><b>Project_description</b></label>
+            <div class="input-group has-validation ms-5">
+                <span id="fn-1" class="input-group-text"><img class="ic" src="./icon pencil.png"></span>
+                <textarea rows="3" cols="40" name="comment" form="usrform" required></textarea>
+                <div class="invalid-feedback">
+                    Please supply your City
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-warning button text-light" type="submit"><b>Send</b><img src="./icon send.png" style="margin-left: 4px;"></button>
+          </div>
+    </form>
+</body>
+<script>
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+</html>
